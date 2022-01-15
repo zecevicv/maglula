@@ -1492,3 +1492,149 @@ body {
     width: 50vw;
   }
 }
+
+/* #About
+================================================== */
+.about {
+  padding: 7.8vw 0 4.5vw 0;
+}
+
+.about .container {
+  width: 86%;
+}
+
+.about .container > p {
+  padding-left: 2.6vw;
+  padding-right: 5vw;
+  margin-bottom: 2.2vw;
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .img {
+  flex: 0 0 34.74vw;
+  margin-right: 2vw;
+}
+
+.about .img img {
+  width: 100%;
+}
+
+@media (max-width: 1023.98px) {
+  .about {
+    padding: 13.3vw 0 25.33vw 0;
+  }
+  
+  .about .container {
+    width: 88%;
+  }
+  
+  .about .container > p {
+    padding: 0 0 0 7.33vw;
+    margin-bottom: 10.66vw;
+  }
+  
+  .about .row {
+    display: block;
+  }
+  
+  .about .img {
+    margin-right: 0;
+    margin-bottom: 7.5vw;
+  }
+  
+  .about .img img {
+    width: 100%;
+  }
+
+  .about .text {
+    padding: 0 4.66vw 0 7.33vw;
+  }
+}
+
+/* #Banner
+================================================== */
+.about-banner {
+  position: relative;
+}
+
+.about-banner .img img,
+.about-banner .img picture {
+  width: 100%;
+}
+
+.about-banner .text {
+  position: absolute;
+  top: 17.2vw;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  width: 77.5%;
+}
+
+.about-banner ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2.34vw 0 2.6vw 0;
+}
+
+.about-banner ul li {
+  flex: 0 0 22.4vw;
+  margin-bottom: 2.6vw;
+}
+
+.about-banner .icons {
+  display: flex;
+  margin-top: 2.6vw;
+}
+
+.about-banner .icons p {
+  display: flex;
+  align-items: center;
+}
+
+.about-banner .icons p:first-child {
+  margin-right: 4.4vw;
+}
+
+.about-banner .icons img {
+  height: 3.65vw;
+  margin-right: 1vw;
+}
+
+@media (max-width: 1023.98px) {
+  .about-banner .text {
+    top: 34.66vw;
+    width: 78.6%;
+  }
+  
+  .about-banner ul {
+    display: block;
+    margin: 4.66vw 0 8vw 0;
+  }
+  
+  .about-banner ul li {
+    margin-bottom: 4vw;
+  }
+  
+  .about-banner .icons {
+    display: block;
+    margin-top: 10.6vw;
+  }
+  
+  .about-banner .icons p:first-child {
+    margin-right: 0;
+    margin-bottom: 8vw;
+  }
+  
+  .about-banner .icons img {
+    height: 8.93vw;
+    width: 9.6vw;
+    object-fit: contain;
+    object-position: center;
+    margin-right: 4vw;
+  }
+}
