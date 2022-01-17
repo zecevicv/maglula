@@ -59,3 +59,20 @@ if (whiteSections) {
     }
   });
 }
+
+/* #Testimonial Gallery Slider
+    ======================================================= */
+if (document.querySelector('.testimonial-gallery')) {
+  new Swiper(".testimonial-gallery .swiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".testimonial-gallery .swiper-pagination",
+    },
+  });
+}
