@@ -32,34 +32,6 @@ if (document.querySelector('.products-slider .swiper')) {
   });
 }
 
-/* #Is In Viewport
-    ======================================================= */
-function isInViewport(el) {
-
-  const rect = el.getBoundingClientRect();
-
-  const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-  const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
-
-  const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
-  const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
-
-  return (vertInView && horInView);
-}
-
-const whiteSections = document.querySelector('.white-sections');
-const staticMenu = document.querySelector('.static-menu');
-
-if (whiteSections) {
-  window.addEventListener('scroll', (e) => {
-    if (isInViewport(whiteSections)) {
-      staticMenu.classList.add('dark');
-    } else {
-      staticMenu.classList.remove('dark');
-    }
-  });
-}
-
 /* #Testimonial Gallery Slider
     ======================================================= */
 if (document.querySelector('.testimonial-gallery')) {
@@ -74,5 +46,69 @@ if (document.querySelector('.testimonial-gallery')) {
     pagination: {
       el: ".testimonial-gallery .swiper-pagination",
     },
+  });
+}
+
+/* #Static Menu
+    ======================================================= */
+gsap.registerPlugin(ScrollTrigger);
+
+const staticMenu = document.querySelector('.static-menu');
+const staticMenuTop = document.querySelector('.static-menu .top');
+const staticMenuBottom = document.querySelector('.static-menu .bottom');
+
+if (staticMenu) {
+  let topStartPosition = '';
+  let endStartPosition = '';
+  if (window.innerWidth > 1023) {
+    topStartPosition = "0 30%";
+  } else {
+    topStartPosition = "0 15%";
+  }
+
+  if (window.innerWidth > 1023) {
+    endStartPosition = "100% 15%";
+  } else {
+    endStartPosition = "100% 5%";
+  }
+
+  // Top
+  ScrollTrigger.create({
+    // markers: true,
+    start: topStartPosition,
+    end: endStartPosition,
+    trigger: ".white-sections",
+    onEnter: () => { 
+      staticMenuTop.classList.add('dark');
+    },
+    onEnterBack: () => { 
+      staticMenuTop.classList.add('dark');
+    },
+    onLeave: () => { 
+      staticMenuTop.classList.remove('dark');
+    },
+    onLeaveBack: () => { 
+      staticMenuTop.classList.remove('dark');
+    }
+  });
+
+  // Bottom
+  ScrollTrigger.create({
+    // markers: true,
+    start: "0 98%",
+    end: "100% 92%",
+    trigger: ".white-sections",
+    onEnter: () => { 
+      staticMenuBottom.classList.add('dark');
+    },
+    onEnterBack: () => { 
+      staticMenuBottom.classList.add('dark');
+    },
+    onLeave: () => { 
+      staticMenuBottom.classList.remove('dark');
+    },
+    onLeaveBack: () => { 
+      staticMenuBottom.classList.remove('dark');
+    }
   });
 }
