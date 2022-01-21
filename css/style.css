@@ -5,6 +5,10 @@ body {
   color: #141414;
 }
 
+form {
+  overflow: hidden;
+}
+
 .bg-dark {
   background-image: linear-gradient(to right, #141414, #262626);
   color: white;
@@ -271,8 +275,7 @@ body {
 
   .home-banner .imgs img:nth-child(1) {
     top: 24.66vw;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 4.4%;
     width: 91.2%;
   }
 
@@ -370,6 +373,11 @@ body {
   margin: 2vw 0;
 }
 
+.find-loader .steps {
+  display: flex;
+  justify-content: center;
+}
+
 .find-loader .steps input {
   width: 59.53vw;
 }
@@ -462,6 +470,7 @@ body {
 .loaders-landing {
   position: relative;
   padding: 23.95vw 0 29.16vw 0;
+  overflow: hidden;
 }
 
 .loaders-landing .container {
@@ -986,6 +995,7 @@ body {
   background-size: 100% auto;
   color: white;
   padding: 13.7vw 0 5.46vw 0;
+  overflow: hidden;
 }
 
 /* Top */
@@ -2136,7 +2146,6 @@ body {
   }
 }
 
-
 /* #Stars
 ================================================== */
 .stars {
@@ -2226,5 +2235,237 @@ body {
   .reviews-list .stars {
     justify-content: flex-end;
     margin-bottom: 1vw;
+  }
+}
+
+/* #mouseAnim (from GreenEnesys)
+================================================== */
+.mouseAnim img:nth-child(1) {
+  transform: translateZ(50px);
+  animation-name: floating1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.3s;
+}
+
+@keyframes floating1 {
+  from {
+    transform: translate3d(0, 0px, 50px);
+  }
+
+  65% {
+    transform: translate3d(0, 5px, 50px);
+  }
+
+  to {
+    transform: translate3d(0, 0px, 50px);
+  }
+}
+
+.mouseAnim img:nth-child(2) {
+  transform: translateZ(80px);
+  animation-name: floating2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: -0.4s;
+}
+
+@keyframes floating2 {
+  from {
+    transform: translate3d(0, 0px, 80px);
+  }
+
+  65% {
+    transform: translate3d(0, 5px, 80px);
+  }
+
+  to {
+    transform: translate3d(0, 0px, 80px);
+  }
+}
+
+.mouseAnim img:nth-child(3) {
+  transform: translateZ(110px);
+  animation-name: floating3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: -1.1s;
+}
+
+@keyframes floating3 {
+  from {
+    transform: translate3d(0, 0px, 110px);
+  }
+
+  65% {
+    transform: translate3d(0, 5px, 110px);
+  }
+
+  to {
+    transform: translate3d(0, 0px, 110px);
+  }
+}
+
+.mouseAnim img:nth-child(4) {
+  transform: translateZ(140px);
+  animation-name: floating4;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: -1.8s;
+}
+
+@keyframes floating4 {
+  from {
+    transform: translate3d(0, 0px, 140px);
+  }
+
+  65% {
+    transform: translate3d(0, 5px, 140px);
+  }
+
+  to {
+    transform: translate3d(0, 0px, 140px);
+  }
+}
+
+.mouseAnim img:nth-child(5) {
+  transform: translateZ(170px);
+  animation-name: floating5;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: -2.5s;
+}
+
+@keyframes floating5 {
+  from {
+    transform: translate3d(0, 0px, 170px);
+  }
+
+  65% {
+    transform: translate3d(0, 5px, 170px);
+  }
+
+  to {
+    transform: translate3d(0, 0px, 170px);
+  }
+}
+
+.mouseAnim img:nth-child(6) {
+  transform: translateZ(200px);
+  animation-name: floating6;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: -3.2s;
+}
+
+@keyframes floating6 {
+  from {
+    transform: translate3d(0, 0px, 200px);
+  }
+
+  65% {
+    transform: translate3d(0, 5px, 200px);
+  }
+
+  to {
+    transform: translate3d(0, 0px, 200px);
+  }
+}
+
+.mouseAnim img:nth-child(7) {
+  transform: translateZ(230px);
+  animation-name: floating7;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: -3.9s;
+}
+
+@keyframes floating7 {
+  from {
+    transform: translate3d(0, 0px, 230px);
+  }
+
+  65% {
+    transform: translate3d(0, 5px, 230px);
+  }
+
+  to {
+    transform: translate3d(0, 0px, 230px);
+  }
+}
+
+.mouseAnim img:nth-child(8) {
+  transform: translateZ(260px);
+  animation-name: floating8;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: -4.6s;
+}
+
+@keyframes floating8 {
+  from {
+    transform: translate3d(0, 0px, 260px);
+  }
+
+  65% {
+    transform: translate3d(0, 5px, 260px);
+  }
+
+  to {
+    transform: translate3d(0, 0px, 260px);
+  }
+}
+
+.mouseAnim img:nth-child(9) {
+  transform: translateZ(290px);
+  animation-name: floating9;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: -5.3s;
+}
+
+@keyframes floating9 {
+  from {
+    transform: translate3d(0, 0px, 290px);
+  }
+
+  65% {
+    transform: translate3d(0, 5px, 290px);
+  }
+
+  to {
+    transform: translate3d(0, 0px, 290px);
+  }
+}
+
+.mouseAnim img:nth-child(10) {
+  transform: translateZ(320px);
+  animation-name: floating10;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: -6s;
+}
+
+@keyframes floating10 {
+  from {
+    transform: translate3d(0, 0px, 320px);
+  }
+
+  65% {
+    transform: translate3d(0, 5px, 320px);
+  }
+
+  to {
+    transform: translate3d(0, 0px, 320px);
   }
 }

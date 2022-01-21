@@ -78,16 +78,16 @@ if (staticMenu) {
     start: topStartPosition,
     end: endStartPosition,
     trigger: ".white-sections",
-    onEnter: () => { 
+    onEnter: () => {
       staticMenuTop.classList.add('dark');
     },
-    onEnterBack: () => { 
+    onEnterBack: () => {
       staticMenuTop.classList.add('dark');
     },
-    onLeave: () => { 
+    onLeave: () => {
       staticMenuTop.classList.remove('dark');
     },
-    onLeaveBack: () => { 
+    onLeaveBack: () => {
       staticMenuTop.classList.remove('dark');
     }
   });
@@ -98,17 +98,44 @@ if (staticMenu) {
     start: "0 98%",
     end: "100% 92%",
     trigger: ".white-sections",
-    onEnter: () => { 
+    onEnter: () => {
       staticMenuBottom.classList.add('dark');
     },
-    onEnterBack: () => { 
+    onEnterBack: () => {
       staticMenuBottom.classList.add('dark');
     },
-    onLeave: () => { 
+    onLeave: () => {
       staticMenuBottom.classList.remove('dark');
     },
-    onLeaveBack: () => { 
+    onLeaveBack: () => {
       staticMenuBottom.classList.remove('dark');
     }
   });
 }
+
+/* #Animations
+    ======================================================= */
+if (document.querySelector('.input-primary')) {
+  const inputs = document.querySelectorAll('.input-primary');
+
+  inputs.forEach((input) => {
+    gsap.from(input, {
+      opacity: 0,
+      xPercent: -100,
+      duration: .6,
+      ease: Power1.easeOut,
+      scrollTrigger: {
+        trigger: input,
+      },
+    });
+  });
+}
+
+/* #AOS Animations
+    ======================================================= */
+AOS.init({
+  startEvent: 'load',
+  once: true,
+  duration: 800,
+  offset: 300,
+});

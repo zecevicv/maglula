@@ -15,6 +15,7 @@
 
   <!-- Style (Vendor) -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
 
   <!-- Style -->
   <link rel="stylesheet" href="css/elevate-framework.css">
@@ -27,20 +28,20 @@
 <body class="home-page">
 
   <!-- Banner -->
-  <div class="home-banner bg-dark">
+  <div class="home-banner bg-dark" id="banner">
     <div class="text">
-      <h1 class="f-d-90 f-m-90 ultra-bold">maglula</h1>
-      <p class="f-d-30 f-m-30 bold">Tools for loading and unloading magazines</p>
-      <a href="#" class="btn btn-primary">Find your loader</a>
+      <h1 class="f-d-90 f-m-90 ultra-bold" data-aos="fade-up" data-aos-anchor="#banner">maglula</h1>
+      <p class="f-d-30 f-m-30 bold" data-aos="fade-up" data-aos-anchor="#banner" data-aos-delay="250">Tools for loading and unloading magazines</p>
+      <a href="#" class="btn btn-primary" data-aos="fade-up" data-aos-anchor="#banner" data-aos-delay="500">Find your loader</a>
     </div>
     <div class="imgs">
-      <div class="d-desktop">
+      <div class="d-desktop mouseAnim">
         <img data-src="img/home/banner-img-1.png" alt="maglula-img" class="lazy">
         <img data-src="img/home/banner-img-3.png" alt="maglula-img" class="lazy">
         <img data-src="img/home/banner-img-4.png" alt="maglula-img" class="lazy">
         <img data-src="img/home/banner-img-5.png" alt="maglula-img" class="lazy">
       </div>
-      <div class="d-mobile">
+      <div class="d-mobile mouseAnim">
         <img data-src="img/home/banner-img-6.png" alt="maglula-img" class="lazy">
         <img data-src="img/home/banner-img-7.png" alt="maglula-img" class="lazy">
         <img data-src="img/home/banner-img-8.png" alt="maglula-img" class="lazy">
@@ -58,7 +59,9 @@
       <h2 class="f-d-70 f-m-70 ultra-bold">Find your loader</h2>
       <!-- Steps -->
       <div class="steps">
-        <input type="text" class="input-primary f-d-24 f-m-24 bold" placeholder="What’s your Caliber?">
+        <form>
+          <input type="text" class="input-primary f-d-24 f-m-24 bold" placeholder="What’s your Caliber?">
+        </form>
       </div>
       <div class="search">
         <a href="#">
@@ -70,7 +73,7 @@
 
   <!-- Testimonal Slider -->
   <div class="testimonial-slider bg-dark">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="swiper">
         <div class="swiper-wrapper">
           <!-- Slide -->
@@ -114,7 +117,7 @@
     <div class="loaders-landing">
       <div class="container">
         <div class="links">
-          <a href="#" class="f-d-75 f-m-53 ultra-bold">
+          <a href="#" class="f-d-75 f-m-53 ultra-bold" data-aos="fade-right">
             <img data-src="img/icons/arrow-left-black.svg" alt="maglula-img" class="lazy">
             <span>
               Rifle<br>
@@ -122,7 +125,7 @@
               Loaders
             </span>
           </a>
-          <a href="#" class="f-d-75 f-m-53 ultra-bold">
+          <a href="#" class="f-d-75 f-m-53 ultra-bold" data-aos="fade-left">
             <span>
               Pistol<br>
               Mag<br>
@@ -131,7 +134,7 @@
             <img data-src="img/icons/arrow-right-black.svg" alt="maglula-img" class="lazy">
           </a>
         </div>
-        <div class="imgs">
+        <div class="imgs mouseAnim">
           <img data-src="img/home/loaders-landing-img-1.png" alt="maglula-img" class="lazy">
           <img data-src="img/home/loaders-landing-img-2.png" alt="maglula-img" class="lazy">
           <img data-src="img/home/loaders-landing-img-4.png" alt="maglula-img" class="lazy">
@@ -150,7 +153,7 @@
               <!-- Slide -->
               <div class="swiper-slide">
                 <div>
-                  <img data-src="img/home/product-1.png" alt="maglula-img" class="lazy">
+                  <img data-src="img/home/product-1.png" alt="maglula-img" class="lazy" data-aos="zoom-in">
                   <h3 class="f-d-30 f-m-36 ultra-bold">UpLula</h3>
                   <h4 class="f-d-18 f-m-24">9mm to 45ACP universal pistol mag loader</h4>
                   <div class="hidden">
@@ -162,7 +165,7 @@
               <!-- Slide -->
               <div class="swiper-slide">
                 <div>
-                  <img data-src="img/home/product-2.png" alt="maglula-img" class="lazy">
+                  <img data-src="img/home/product-2.png" alt="maglula-img" class="lazy" data-aos="zoom-in">
                   <h3 class="f-d-30 f-m-36 ultra-bold">UpLula</h3>
                   <h4 class="f-d-18 f-m-24">9mm to 45ACP universal pistol mag loader</h4>
                   <div class="hidden">
@@ -174,7 +177,7 @@
               <!-- Slide -->
               <div class="swiper-slide">
                 <div>
-                  <img data-src="img/home/product-3.png" alt="maglula-img" class="lazy">
+                  <img data-src="img/home/product-3.png" alt="maglula-img" class="lazy" data-aos="zoom-in">
                   <h3 class="f-d-30 f-m-36 ultra-bold">UpLula</h3>
                   <h4 class="f-d-18 f-m-24">9mm to 45ACP universal pistol mag loader</h4>
                   <div class="hidden">
@@ -186,7 +189,7 @@
               <!-- Slide -->
               <div class="swiper-slide">
                 <div>
-                  <img data-src="img/home/product-1.png" alt="maglula-img" class="lazy">
+                  <img data-src="img/home/product-1.png" alt="maglula-img" class="lazy" data-aos="zoom-in">
                   <h3 class="f-d-30 f-m-36 ultra-bold">UpLula</h3>
                   <h4 class="f-d-18 f-m-24">9mm to 45ACP universal pistol mag loader</h4>
                   <div class="hidden">
@@ -216,21 +219,21 @@
         <h2 class="f-d-24 f-m-30">Major USA Dealers</h2>
         <ul>
           <!-- Item -->
-          <li><img data-src="img/logos/distributor-1.png" alt="maglula-img" class="lazy"></li>
-          <li><img data-src="img/logos/distributor-2.png" alt="maglula-img" class="lazy"></li>
-          <li><img data-src="img/logos/distributor-3.png" alt="maglula-img" class="lazy"></li>
-          <li><img data-src="img/logos/distributor-4.png" alt="maglula-img" class="lazy"></li>
-          <li><img data-src="img/logos/distributor-5.png" alt="maglula-img" class="lazy"></li>
-          <li><img data-src="img/logos/distributor-6.png" alt="maglula-img" class="lazy"></li>
-          <li><img data-src="img/logos/distributor-7.png" alt="maglula-img" class="lazy"></li>
-          <li><img data-src="img/logos/distributor-8.png" alt="maglula-img" class="lazy"></li>
-          <li><img data-src="img/logos/distributor-9.png" alt="maglula-img" class="lazy"></li>
-          <li><img data-src="img/logos/distributor-10.png" alt="maglula-img" class="lazy"></li>
-          <li><img data-src="img/logos/distributor-11.png" alt="maglula-img" class="lazy"></li>
-          <li><img data-src="img/logos/distributor-12.png" alt="maglula-img" class="lazy"></li>
-          <li><img data-src="img/logos/distributor-13.png" alt="maglula-img" class="lazy"></li>
-          <li><img data-src="img/logos/distributor-14.png" alt="maglula-img" class="lazy"></li>
-          <li><img data-src="img/logos/distributor-15.png" alt="maglula-img" class="lazy"></li>
+          <li><img data-src="img/logos/distributor-1.png" alt="maglula-img" class="lazy" data-aos="zoom-in"></li>
+          <li><img data-src="img/logos/distributor-2.png" alt="maglula-img" class="lazy" data-aos="zoom-in"></li>
+          <li><img data-src="img/logos/distributor-3.png" alt="maglula-img" class="lazy" data-aos="zoom-in"></li>
+          <li><img data-src="img/logos/distributor-4.png" alt="maglula-img" class="lazy" data-aos="zoom-in"></li>
+          <li><img data-src="img/logos/distributor-5.png" alt="maglula-img" class="lazy" data-aos="zoom-in"></li>
+          <li><img data-src="img/logos/distributor-6.png" alt="maglula-img" class="lazy" data-aos="zoom-in"></li>
+          <li><img data-src="img/logos/distributor-7.png" alt="maglula-img" class="lazy" data-aos="zoom-in"></li>
+          <li><img data-src="img/logos/distributor-8.png" alt="maglula-img" class="lazy" data-aos="zoom-in"></li>
+          <li><img data-src="img/logos/distributor-9.png" alt="maglula-img" class="lazy" data-aos="zoom-in"></li>
+          <li><img data-src="img/logos/distributor-10.png" alt="maglula-img" class="lazy" data-aos="zoom-in"></li>
+          <li><img data-src="img/logos/distributor-11.png" alt="maglula-img" class="lazy" data-aos="zoom-in"></li>
+          <li><img data-src="img/logos/distributor-12.png" alt="maglula-img" class="lazy" data-aos="zoom-in"></li>
+          <li><img data-src="img/logos/distributor-13.png" alt="maglula-img" class="lazy" data-aos="zoom-in"></li>
+          <li><img data-src="img/logos/distributor-14.png" alt="maglula-img" class="lazy" data-aos="zoom-in"></li>
+          <li><img data-src="img/logos/distributor-15.png" alt="maglula-img" class="lazy" data-aos="zoom-in"></li>
         </ul>
         <a href="#" class="f-d-20 f-m-24 ultra-bold">See all Dealers & Distributers</a>
       </div>
@@ -245,7 +248,9 @@
       </div>
       <h3 class="f-d-18 f-m-24">Our products are covered by limited one year warranty against defects in materials and workmanship.</h3>
       <h2 class="f-d-30 f-m-30 ultra-bold">Subscribe to our mailing list</h2>
-      <input type="text" class="input-primary f-d-16 f-m-22 bold" placeholder="Email">
+      <form>
+        <input type="text" class="input-primary f-d-16 f-m-22 bold" placeholder="Email">
+      </form>
       <a href="#"><img data-src="img/icons/arrow-right-white.svg" alt="maglula-img" class="lazy"></a>
     </div>
   </div>
@@ -284,10 +289,11 @@
     </div>
     <!-- Bottom -->
     <div class="footer-bottom">
+      <div id="footerBottom" class="d-desktop"></div>
       <div class="container">
         <div class="top">
           <!-- Categories -->
-          <div class="footer-categories">
+          <div class="footer-categories" data-aos="fade-up" data-aos-anchor="#footerBottom">
             <h2 class="f-d-30 f-m-30 ultra-bold">Product Categories</h2>
             <ul class="f-d-18 medium">
               <!-- Item -->
@@ -313,7 +319,7 @@
             </ul>
           </div>
           <!-- Calibers -->
-          <div class="footer-calibers">
+          <div class="footer-calibers" data-aos="fade-up" data-aos-delay="150" data-aos-anchor="#footerBottom">
             <h2 class="f-d-30 f-m-30 ultra-bold">Calibers</h2>
             <ul class="f-d-18 medium">
               <!-- Item -->
@@ -355,7 +361,7 @@
             </ul>
           </div>
         </div>
-        <div class="bottom">
+        <div class="bottom" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="#footerBottom">
           <!-- Links -->
           <div class="footer-links">
             <ul class="f-d-18 f-m-24 medium">
@@ -522,6 +528,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/ScrollTrigger.min.js"></script>
   <script src="js/gsap.min.js"></script>
+  <script src="js/aos.js"></script>
   
   <!-- Script -->
   <script src="js/elevate-framework.js"></script>

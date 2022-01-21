@@ -15,6 +15,7 @@
 
   <!-- Style (Vendor) -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
 
   <!-- Style -->
   <link rel="stylesheet" href="css/elevate-framework.css">
@@ -27,13 +28,13 @@
 <body class="about-page">
 
   <!-- Banner -->
-  <div class="about-banner">
+  <div class="about-banner" id="banner">
     <div class="text">
-      <h1 class="f-d-75 f-m-75 ultra-bold">About Us</h1>
-      <p class="f-d-18 f-m-24 bold">maglula Ltd. name stands for magazine loaders and unloaders accessories. maglula
+      <h1 class="f-d-75 f-m-75 ultra-bold" data-aos="fade-up" data-aos-anchor="#banner">About Us</h1>
+      <p class="f-d-18 f-m-24 bold" data-aos="fade-up" data-aos-anchor="#banner" data-aos-delay="100">maglula Ltd. name stands for magazine loaders and unloaders accessories. maglula
         Ltd. is a privately held Israeli company dedicated to the development of high quality loader and unloader tools
         for military use. Established in 2001. We currently provide several product families:</p>
-      <ul>
+      <ul data-aos="fade-up" data-aos-anchor="#banner" data-aos-delay="200">
         <!-- Item -->
         <li>
           <p class="f-d-18 f-m-24 bold">LULA</p>
@@ -71,7 +72,7 @@
             a locking loader for mags with a side button</p>
         </li>
       </ul>
-      <p class="f-d-18 f-m-24 medium">All our products were invented, developed, brought to production, and QC
+      <p class="f-d-18 f-m-24 medium" data-aos="fade-up" data-aos-anchor="#banner" data-aos-delay="300">All our products were invented, developed, brought to production, and QC
         supervised by Ran and Guy Tal (father & son), in Israel. We make working prototypes by hand using combination of
         metals, plastics and wood. We then make precise 3D CAD models of the prototype. Molds are made for plastic
         injected products. The BenchLoaders are CNC machined.
@@ -80,7 +81,7 @@
         Control (QC) is maintained throughout the manufacturing process. All UpLULAs and BenchLoaders are individually
         inspected prior to packing and shipping. Random samples are inspected and tested out of the manufactured LULA®
         and StripLULA® family lines prior to packing and shipping.</p>
-      <div class="icons">
+      <div class="icons" data-aos="fade-up" data-aos-anchor="#banner" data-aos-delay="400">
         <p class="f-d-18 f-m-24 ultra-bold">
           <img src="img/about/icon-1.png" alt="maglula-img">
           <span>
@@ -108,9 +109,9 @@
   <!-- White Secttions -->
   <div class="white-sections">
     <!-- About -->
-    <div class="about">
+    <div class="about" id="about">
       <div class="container">
-        <p class="f-d-18 f-m-24 medium">
+        <p class="f-d-18 f-m-24 medium" data-aos="fade-up" data-aos-anchor="#about">
           <span class="bold">
             About our chief inventor Ran Tal
             <br>Sep. 7, 1936 – Sep. 17, 2019.
@@ -125,10 +126,10 @@
           knowledge, then, not knowing what is impossible in that area, he usually invent something new.
         </p>
         <div class="row">
-          <div class="img">
+          <div class="img" data-aos="fade-right" data-aos-delay="400" data-aos-anchor="#about">
             <img src="img/about/img-1.jpg" alt="maglula-img">
           </div>
-          <div class="text">
+          <div class="text" data-aos="fade-left" data-aos-delay="700" data-aos-anchor="#about">
             <p class="f-d-18 f-m-24 medium">
               Here are few of Ran’s past occupations, and the list is still open
               <br><br>
@@ -172,7 +173,9 @@
       <h3 class="f-d-18 f-m-24">Our products are covered by limited one year warranty against defects in materials and
         workmanship.</h3>
       <h2 class="f-d-30 f-m-30 ultra-bold">Subscribe to our mailing list</h2>
-      <input type="text" class="input-primary f-d-16 f-m-22 bold" placeholder="Email">
+      <form>
+        <input type="text" class="input-primary f-d-16 f-m-22 bold" placeholder="Email">
+      </form>
       <a href="#"><img data-src="img/icons/arrow-right-white.svg" alt="maglula-img" class="lazy"></a>
     </div>
   </div>
@@ -185,11 +188,8 @@
         <!-- About -->
         <div class="footer-about">
           <h2 class="f-d-30 f-m-30 ultra-bold">About us</h2>
-          <p class="f-d-18 f-m-24 bold">Since 2001, we at maglula Ltd. Israel design and manufacture professional
-            military-grade tools for loading and unloading magazines.</p>
-          <p class="f-d-18 f-m-24">Our products save valuable time at the range, field and armory, and prevent pain
-            associated with loading and unloading magazines. They also prevent damage to the magazine lips, therefore
-            reducing weapon jams. We currently hold 9 US patents associated with magazine loaders. More to come.</p>
+          <p class="f-d-18 f-m-24 bold">Since 2001, we at maglula Ltd. Israel design and manufacture professional military-grade tools for loading and unloading magazines.</p>
+          <p class="f-d-18 f-m-24">Our products save valuable time at the range, field and armory, and prevent pain associated with loading and unloading magazines. They also prevent damage to the magazine lips, therefore reducing weapon jams. We currently hold 9 US patents associated with magazine loaders. More to come.</p>
           <a href="#" class="f-d-18 f-m-24">+ More about us</a>
         </div>
         <!-- About -->
@@ -203,8 +203,8 @@
             <input type="text" class="input-primary f-d-16 f-m-22 bold" placeholder="Message">
           </form>
           <a href="#"><img data-src="img/icons/arrow-right-white.svg" alt="maglula-img" class="lazy"></a>
-          <p class="f-d-16 f-m-22 medium text-orange">For Orders, Sales and Marketing contact us at: guy@maglula.com
-            <br> For Customer Support: info@maglula.com</p>
+          <p class="f-d-16 f-m-22 medium text-orange">For Orders, Sales and Marketing contact us at:  guy@maglula.com
+           <br> For Customer Support: info@maglula.com</p>
         </div>
         <!-- Logo -->
         <div class="footer-logo">
@@ -214,10 +214,11 @@
     </div>
     <!-- Bottom -->
     <div class="footer-bottom">
+      <div id="footerBottom" class="d-desktop"></div>
       <div class="container">
         <div class="top">
           <!-- Categories -->
-          <div class="footer-categories">
+          <div class="footer-categories" data-aos="fade-up" data-aos-anchor="#footerBottom">
             <h2 class="f-d-30 f-m-30 ultra-bold">Product Categories</h2>
             <ul class="f-d-18 medium">
               <!-- Item -->
@@ -243,7 +244,7 @@
             </ul>
           </div>
           <!-- Calibers -->
-          <div class="footer-calibers">
+          <div class="footer-calibers" data-aos="fade-up" data-aos-delay="150" data-aos-anchor="#footerBottom">
             <h2 class="f-d-30 f-m-30 ultra-bold">Calibers</h2>
             <ul class="f-d-18 medium">
               <!-- Item -->
@@ -285,7 +286,7 @@
             </ul>
           </div>
         </div>
-        <div class="bottom">
+        <div class="bottom" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="#footerBottom">
           <!-- Links -->
           <div class="footer-links">
             <ul class="f-d-18 f-m-24 medium">
@@ -310,10 +311,10 @@
           <!-- Links -->
           <div class="footer-links-2">
             <a href="#" class="f-d-18 text-orange bold">
-              Find your fit .
+              Find your fit . 
             </a>
             <a href="#" class="f-d-18 text-orange bold">
-              For Dealers
+              For Dealers 
             </a>
           </div>
           <!-- Copy -->
@@ -452,6 +453,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/ScrollTrigger.min.js"></script>
   <script src="js/gsap.min.js"></script>
+  <script src="js/aos.js"></script>
 
   <!-- Script -->
   <script src="js/elevate-framework.js"></script>
