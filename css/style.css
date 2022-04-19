@@ -47,6 +47,13 @@ form {
   border-radius: 2px;
 }
 
+.btn.btn-secondary {
+  color: white;
+  border: 2px solid white;
+  background-color: #181818;
+  border-radius: 500px;
+}
+
 @media (max-width: 1023.98px) {
   .btn {
     height: 10.4vw;
@@ -2713,5 +2720,220 @@ form {
   
   .download .logo-kit ul img {
     height: 4vw;
+  }
+}
+
+/* #Dealers Banner
+================================================== */
+.dealers-banner {
+  position: relative;
+}
+
+.dealers-banner .img img,
+.dealers-banner .img picture {
+  width: 100%;
+}
+
+.dealers-banner .text {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 25.52vw;
+}
+
+.dealers-banner p {
+  margin: .75vw 0 1vw 0;
+}
+
+.dealers-banner .btn {
+  margin-top: 3.65vw;
+}
+
+@media (max-width: 1023.98px) {
+  .dealers-banner .text {
+    top: 78%;
+    transform: translate(-50%, -50%);
+    width: 82%;
+  }
+  
+  .dealers-banner p {
+    margin: 3.5vw 0;
+  }
+  
+  .dealers-banner .btn {
+    display: none;
+  }
+}
+
+/* #Dealers Form
+================================================== */
+.dealers-form {
+  text-align: center;
+  padding: 6.77vw 0;
+}
+
+.dealers-form .container {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dealers-form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2vw;
+}
+
+.dealers-form form > * {
+  flex: 0 0 32%;
+  margin-bottom: 2.6vw;
+}
+
+.dealers-form .container > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dealers-form .checkbox {
+  margin-bottom: 1.5vw;
+}
+
+.dealers-form .container > a img {
+  width: 1.8vw;
+  margin-left: .78vw;
+}
+
+@media (max-width: 1023.98px) {
+  .dealers-form {
+    padding: 0 0 20vw 0;
+  }
+  
+  .dealers-form .container {
+    width: 83%;
+  }
+
+  .dealers-form h2 {
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  .dealers-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 8vw;
+  }
+  
+  .dealers-form form > * {
+    flex: 0 0 47%;
+    margin-bottom: 9.33vw;
+    text-align: left;
+  }
+  
+  .dealers-form .checkbox {
+    margin-bottom: 5vw;
+  }
+  
+  .dealers-form .container > a img {
+    width: 8vw;
+    margin-left: 2vw;
+  }
+}
+
+/* #Dealers Search
+================================================== */
+.dealers-search {
+  text-align: center;
+  margin-bottom: 10vw;
+}
+
+.dealers-search .container {
+  width: 52%;
+}
+
+.dealers-search h2 {
+  margin-bottom: .5vw;
+}
+
+.dealers-search form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3.125vw;
+  border-radius: 500px;
+  border: 2px solid black;
+  padding: 0 1vw;
+}
+
+.dealers-search form a {
+  justify-self: flex-end;
+}
+
+.dealers-search form a img {
+  width: 1.8vw;
+}
+
+.dealers-search input {
+  background-color: none;
+  border: none;
+  color: black;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.dealers-search input::placeholder {
+  color: black;
+}
+
+@media (max-width: 1023.98px) {
+  .dealers-search {
+    margin-bottom: 20vw;
+  }
+  
+  .dealers-search .container {
+    width: 86%;
+  }
+  
+  .dealers-search h2 {
+    margin-bottom: 2.66vw;
+  }
+  
+  .dealers-search form {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+  }
+  
+  .dealers-search form a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dealers-search form a img {
+    width: 4.66vw;
+  }
+  
+  .dealers-search input {
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding-bottom: 4vw;
+    margin-bottom: 4vw;
+  }
+  
+  .dealers-search input::placeholder {
+    color: black;
   }
 }
