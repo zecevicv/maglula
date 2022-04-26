@@ -2752,6 +2752,38 @@ form {
   margin-top: 3.65vw;
 }
 
+.dealers-banner .imgs img:nth-child(1) {
+  position: absolute;
+  top: 14.16vw;
+  left: 16.5vw;
+  width: 19.47vw;
+  z-index: 2;
+}
+
+.dealers-banner .imgs img:nth-child(2) {
+  position: absolute;
+  top: 13.43vw;
+  left: 20.4vw;
+  width: 5.83vw;
+  z-index: 3;
+}
+
+.dealers-banner .imgs img:nth-child(3) {
+  position: absolute;
+  top: 18.28vw;
+  left: 16.97vw;
+  width: 4.58vw;
+  z-index: 1;
+}
+
+.dealers-banner .imgs img:nth-child(4) {
+  position: absolute;
+  top: 14.21vw;
+  left: 68.69vw;
+  width: 3.54vw;
+  z-index: 0;
+}
+
 @media (max-width: 1023.98px) {
   .dealers-banner .text {
     top: 78%;
@@ -2765,6 +2797,30 @@ form {
   
   .dealers-banner .btn {
     display: none;
+  }
+
+  .dealers-banner .imgs img:nth-child(1) {
+    top: 26.66vw;
+    left: 28.6vw;
+    width: 43vw;
+  }
+  
+  .dealers-banner .imgs img:nth-child(2) {
+    top: 26.66vw;
+    left: 66.6vw;
+    width: 14.93vw;
+  }
+  
+  .dealers-banner .imgs img:nth-child(3) {
+    top: 40vw;
+    left: 22vw;
+    width: 11.73vw;
+  }
+  
+  .dealers-banner .imgs img:nth-child(4) {
+    top: 23.33vw;
+    left: 25.33vw;
+    width: 9vw;
   }
 }
 
